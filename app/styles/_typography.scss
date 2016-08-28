@@ -1,42 +1,11 @@
-p {
-  margin-bottom: 1em;
-}
-
-.heading {
-  margin-bottom: 0.618em;
-
-  &.-large {
-    font-size: $font-size--lg;
-    font-weight: bold;
-    line-height: $half-space * 3 / 2;
-  }
-
-  &.-medium {
-    font-size: $font-size--md;
-    font-weight: normal;
-    line-height: $half-space;
-  }
-
-  &.-small {
-    font-size: $font-size--sm;
-    font-weight: bold;
-    line-height: $half-space * 2 / 3;
-  }
-
-  &.-smallest {
-    font-size: $font-size--xs;
-    font-weight: bold;
-  }
-}
-
-h1 {
-  @extend .heading.-large;
-}
-
-h2 {
-  @extend .heading.-medium;
-}
-
-h3 {
-  @extend .heading.-small;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/opensans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/opensans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/opensans-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/opensans-regular-webfont.svg#svgQuincyCF') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+    font-style: normal;
 }

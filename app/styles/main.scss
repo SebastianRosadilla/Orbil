@@ -1,9 +1,14 @@
 @import 'vars';
 @import 'typography';
+@import 'header';
+@import '../font-awesome/scss/font-awesome';
 
 body {
   font-family: Helvetica, sans-serif;
-  color: $font-color--dark;
-  background-color: $background--light;
+  color: $dark;
+  background-color: $white;
   padding: $half-space;
+  font-family: 'Open Sans';
+  padding:0;
+  margin: 0;
 }

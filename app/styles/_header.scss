@@ -1,0 +1,65 @@
+$logo-size: 5em;
+$icon-size: 1.7em;
+$default-padding:.5em;
+$menu-border-icon:1px solid #eee;
+$header-height: 4rem;
+$nav-height: 3em;
+
+header {
+	box-shadow: 0 2px 10px rgba(50,50,50,0.2);
+	height: $header-height;
+	position:relative;
+    z-index: 1;
+    .logo-container{
+	    display: inline-block;
+	    padding: $default-padding*1.7 0 0 $default-padding*1.7;
+	    width: 50%;
+	    height: $nav-height;
+		.logo {
+			 background: url("../images/logo.svg") no-repeat;
+			 display: inline-block;
+			 height: $nav-height;
+			 width: $logo-size;
+		}
+	}
+	.search{
+		//border-left: $menu-border-icon;
+		//border-right: $menu-border-icon;
+		float: right;
+		height:$nav-height;
+		margin-right: $nav-height;
+		padding: 1.1em $default-padding*2 0 $default-padding*2;
+		.icon{
+			background: url("../images/search.svg") no-repeat;
+			display: block;
+			height: $icon-size;
+			width: $icon-size;
+		}
+	}
+	nav{
+		span:after{
+			box-shadow: 0 0 0 2px $medium-grey,0 8px 0 2px $medium-grey,0 16px 0 2px $medium-grey;
+			content: "";
+			display: block;
+		    height: 0;
+		    position: absolute;
+		    right: $half-space;
+		    top: 37%;
+		    width: 1.3rem;
+		}
+		.show{
+			display: block;
+			margin:0;
+			padding:0;
+			width: 100%;
+			li{
+				list-style: none;
+				padding: $default-padding 0 $default-padding $half-space;
+				a {
+					text-decoration: none;
+					color: $dark;
+				}
+			}
+		}
+	}
+}
