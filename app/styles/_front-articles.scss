@@ -1,0 +1,30 @@
+
+
+article{
+	figure{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		margin-bottom: $default-padding/2;
+		img{
+			width: 100%;
+		}
+		figcaption{
+			bottom:0;
+			margin:$half-space;
+			position: absolute;
+			h2{
+				background-color: $primary-color;
+				color: $white;
+				display: inline;
+				font-size: $font-size-h2;
+				line-height: 2em;
+				padding: 3px 7px;
+				-webkit-box-decoration-break: clone;
+			    -o-box-decoration-break: clone;
+			    box-decoration-break: clone;
+			    font-weight: 400;
+			}
+		}
+	}
+}
