@@ -1,4 +1,5 @@
-
+$article-h2-line-height:2em;
+$article-h2-padding: 3px 7px;
 
 article{
 	figure{
@@ -17,9 +18,9 @@ article{
 				background-color: $primary-color;
 				color: $white;
 				display: inline;
-				font-size: $font-size-h2;
-				line-height: 2em;
-				padding: 3px 7px;
+				font-size: $h2-font-size;
+				line-height: $article-h2-line-height;
+				padding: $article-h2-padding;
 				-webkit-box-decoration-break: clone;
 			    -o-box-decoration-break: clone;
 			    box-decoration-break: clone;
