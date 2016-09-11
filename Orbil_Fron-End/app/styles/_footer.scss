@@ -1,0 +1,27 @@
+$footer-logo-size: 9em;
+$footer-height: 4em;
+$logo-container-top-margin: 80px;
+
+footer {
+	background-color:$smoke;
+	border-top: 5px solid $primary-color;
+	padding-bottom: $logo-container-top-margin;
+	.logo-container{
+	    display: block;
+	    text-align: center;
+	    height: $footer-height;
+	    margin-top:$logo-container-top-margin;
+		.logo {
+			 background: url("../images/logo.svg") no-repeat;
+			 display: inline-block;
+			 height: $footer-height;
+			 width: $footer-logo-size;
+		}
+	}
+	.copyright {
+		font-size: $font-size-sm; 
+		text-align: center;
+		margin: $full-space $half-space 0;
+
+	}
+}
