@@ -15,6 +15,14 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider, $compil
     title: 'Home'
   });
 
+  $stateProvider
+  .state('Content', {
+    url: '/contetn',
+    controller: 'ExampleCtrl as home',
+    templateUrl: 'content.html',
+    title: 'Content'
+  });
+
   $urlRouterProvider.otherwise('/');
 
 }
