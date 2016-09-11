@@ -14,18 +14,25 @@ article{
 			bottom:0;
 			margin:$half-space;
 			position: absolute;
-			h2{
-				background-color: $primary-color;
-				color: $white;
-				display: inline;
-				font-size: $h2-font-size;
-				line-height: $article-h2-line-height;
-				padding: $article-h2-padding;
-				-webkit-box-decoration-break: clone;
-			    -o-box-decoration-break: clone;
-			    box-decoration-break: clone;
-			    font-weight: 400;
-			}
+			
 		}
+	}
+	h2{
+		background-color: $primary-color;
+		color: $white;
+		display: inline;
+		font-size: $h2-font-size;
+		line-height: $article-h2-line-height;
+		padding: $article-h2-padding;
+		-webkit-box-decoration-break: clone;
+	    -o-box-decoration-break: clone;
+	    box-decoration-break: clone;
+	    font-weight: 400;
+	}
+}
+section {
+	margin:$half-space;
+	.last-articles {
+		margin-top: $half-space/2;
 	}
 }
